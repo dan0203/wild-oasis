@@ -94,11 +94,16 @@ Modal.Open = Open;
 Modal.Window = Window;
 
 Modal.propTypes = {
-    children: PropTypes.array,
+    children: PropTypes.node,
+};
+
+Open.propTypes = {
+    children: PropTypes.element,
+    opens: PropTypes.string,
 };
 
 Window.propTypes = {
-    children: PropTypes.object,
+    children: PropTypes.element,
     close: PropTypes.func,
     name: PropTypes.string,
 };
