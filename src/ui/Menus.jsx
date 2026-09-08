@@ -137,7 +137,7 @@ Menus.Button = Button;
 
 Menus.propTypes = { children: PropTypes.node };
 Toggle.propTypes = { id: PropTypes.number };
-List.propTypes = { id: PropTypes.number, children: PropTypes.array };
+List.propTypes = { id: PropTypes.number, children: PropTypes.node };
 Button.propTypes = { children: PropTypes.string, icon: PropTypes.element, onClick: PropTypes.func };
 
 export default Menus;
