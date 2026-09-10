@@ -43,7 +43,7 @@ Because the account is shared, data you see may have been added, edited or remov
 
 ## Tech stack
 
-React (Vite) · React Query · Supabase (Postgres, Auth, Storage) · react-hook-form · styled-components · recharts
+React (Vite) · React Router · React Query · Context API · Supabase (Postgres, Auth, Storage) · react-hook-form · styled-components · recharts · date-fns
 
 ## Running locally
 

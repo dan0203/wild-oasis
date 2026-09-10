@@ -43,7 +43,7 @@ Le compte étant partagé, les données que vous voyez ont pu être ajoutées, m
 
 ## Stack technique
 
-React (Vite) · React Query · Supabase (Postgres, Auth, Storage) · react-hook-form · styled-components · recharts
+React (Vite) · React Router · React Query · Context API · Supabase (Postgres, Auth, Storage) · react-hook-form · styled-components · recharts · date-fns
 
 ## Lancer le projet en local
 
