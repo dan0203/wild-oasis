@@ -61,7 +61,7 @@ export async function updateCurrentUser({ password, fullName, avatar }) {
 
     if (error) throw new Error(error.message);
 
-    if (!avatar) return data;
+    if (!avatar) return data.user;
 
     // 2. Upload the avatar image
     const fileName = `avatar-${data.user.id}-${Math.random()}`;
@@ -71,7 +71,7 @@ export async function updateCurrentUser({ password, fullName, avatar }) {
     if (storageError) throw new Error(storageError.message);
 
     // 3. Use avatar in the user
-    const { data: updatedUser, error: error2 } = supabase.auth.updateUser({
+    const { data: updatedUser, error: error2 } = await supabase.auth.updateUser({
         data: {
             avatar: `${supabaseUrl}/storage/v1/object/public/avatars/${fileName}`,
         },
@@ -79,5 +79,12 @@ export async function updateCurrentUser({ password, fullName, avatar }) {
 
     if (error2) throw new Error(error2.message);
 
-    return updatedUser;
+    // 4. Delete the old avatar, if there was one
+    const oldAvatarUrl = data.user.user_metadata?.avatar;
+    if (oldAvatarUrl) {
+        const oldFileName = oldAvatarUrl.split('/').pop();
+        await supabase.storage.from('avatars').remove([oldFileName]);
+    }
+
+    return updatedUser.user;
 }
