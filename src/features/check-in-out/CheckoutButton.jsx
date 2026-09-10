@@ -13,7 +13,7 @@ function CheckoutButton({ bookingId }) {
 }
 
 CheckoutButton.propTypes = {
-    bookingId: PropTypes.string,
+    bookingId: PropTypes.number,
 };
 
 export default CheckoutButton;
