@@ -10,6 +10,8 @@ Hotel management dashboard for internal staff — bookings, check-in/check-out, 
 
 This is an internal staff tool: every signed-in user sees and can edit the same shared data (bookings, cabins, guests), and public sign-up on the project is disabled by design (see [Security](#security)). So there's no self-service demo account to hand out — get in touch and I'll send you a login. Reach me through [dan0203.github.io](https://dan0203.github.io).
 
+Because the account is shared, data you see may have been added, edited or removed by someone else who tried the demo before you — if something looks off, that's most likely why, not a bug.
+
 ## Screenshots
 
 ![Dashboard](./screenshots/dashboard.png)
@@ -77,4 +79,8 @@ Variables must be prefixed with `VITE_` — that's a Vite requirement for exposi
 
 ## About this project
 
-Built as the capstone project of *The Ultimate React Course 2025* (Jonas Schmedtmann) — the React/Redux part of the course. The course's Next.js module was deliberately left for later and isn't reflected in this app.
+Built as the capstone project of *The Ultimate React Course 2025* (Jonas Schmedtmann).
+
+## License
+
+[MIT](./LICENSE)

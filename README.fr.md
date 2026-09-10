@@ -10,6 +10,8 @@ Dashboard de gestion hôtelière à usage interne — réservations, check-in/ch
 
 C'est un outil interne à un seul établissement : tout utilisateur connecté voit et peut modifier les mêmes données partagées (réservations, cabines, clients), et l'inscription publique sur le projet est désactivée par choix de sécurité (voir [Sécurité](#sécurité)). Il n'y a donc pas de compte de démo en libre-service — contactez-moi et je vous transmets des identifiants. Coordonnées disponibles sur [dan0203.github.io](https://dan0203.github.io).
 
+Le compte étant partagé, les données que vous voyez ont pu être ajoutées, modifiées ou supprimées par quelqu'un d'autre ayant testé la démo avant vous — si quelque chose semble étrange, c'est probablement la raison, pas un bug.
+
 ## Captures d'écran
 
 ![Dashboard](./screenshots/dashboard.png)
@@ -77,4 +79,8 @@ Les variables doivent être préfixées par `VITE_` — c'est une exigence de Vi
 
 ## À propos de ce projet
 
-Développé comme projet capstone de *The Ultimate React Course 2025* (Jonas Schmedtmann) — la partie React/Redux du cours. Le module Next.js du cours a été volontairement laissé pour plus tard et n'est pas présent dans cette app.
+Développé comme projet capstone de *The Ultimate React Course 2025* (Jonas Schmedtmann).
+
+## Licence
+
+[MIT](./LICENSE)
